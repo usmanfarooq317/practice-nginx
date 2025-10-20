@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App 1 | Welcome</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body {
+      height: 100vh;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fcb69f, #ffecd2);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 25px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      backdrop-filter: blur(12px);
+      padding: 60px 90px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+    p {
+      color: #fdfdfd;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #ff758c;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to the First Page</h1>
+    <p>This is <strong>App 1</strong> — bright and lively.</p>
+    <a class="btn" href="#">Reload to see App 2 ➜</a>
+  </div>
+</body>
+</html>
+
