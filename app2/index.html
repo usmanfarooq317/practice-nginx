@@ -1,74 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App 2 | Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App 2</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
     body {
-      height: 100vh;
-      background: linear-gradient(135deg, #89f7fe, #66a6ff, #6a11cb, #2575fc);
-      background-size: 400% 400%;
-      animation: gradientShift 10s ease infinite;
+      font-family: 'Arial', sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(120deg, #89f7fe, #66a6ff);
+      color: #fff;
+      animation: colorShift 8s infinite alternate;
     }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .card {
-      background: rgba(255,255,255,0.1);
-      border-radius: 25px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-      backdrop-filter: blur(12px);
-      padding: 60px 90px;
-      text-align: center;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    @keyframes colorShift {
+      0% {background-position: 0% 50%;}
+      100% {background-position: 100% 50%;}
     }
     h1 {
-      color: #ffffff;
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-      text-shadow: 0 0 10px rgba(255,255,255,0.6);
-    }
-    p {
-      color: #fdfdfd;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 10px 30px;
-      border-radius: 30px;
-      border: 2px solid #fff;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background: #fff;
-      color: #2575fc;
-      transform: scale(1.1);
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Welcome to the Second Page</h1>
-    <p>This is <strong>App 2</strong> — calm and cool.</p>
-    <a class="btn" href="#">Reload to see App 1 ➜</a>
-  </div>
+  <h1>Welcome to App 2 🚀</h1>
 </body>
 </html>
-

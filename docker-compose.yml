@@ -1,29 +1,19 @@
-version: "3.8"
+version: '3.8'
+
 services:
   app1:
     build: ./app1
     container_name: app1
-    networks:
-      - demo_net
 
   app2:
     build: ./app2
     container_name: app2
-    networks:
-      - demo_net
 
   lb:
     build: ./lb
     container_name: lb
     ports:
-      - "80:80"     # ✅ localhost, no :8080 now
+      - "80:80"
     depends_on:
       - app1
       - app2
-    networks:
-      - demo_net
-
-networks:
-  demo_net:
-    driver: bridge
-
